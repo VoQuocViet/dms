@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tin Tức</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-scroll.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-mobi.css"/>
+<script type="text/javascript" src="js/menu.jquery.min.js"></script>
+<script type="text/javascript" src="js/activemn.js"></script>
+<script>
+	$(document).ready(function(){
+		$('a.number').click(function(){
+		var an=$('a.set').attr('title');
+		$('div#'+an).hide();
+		$('a.set').removeClass('set');
+		$(this).addClass('set');
+		var hien=$(this).attr('title');
+		$('div#'+hien).show();
+		$('nav.cmn-tile-nav').removeClass('open');
+		})
+	});
+</script>
+</head>
+
+<body>
+<div id="main">
+<header id="header">
+	<div class="logo">
+    	<div class="logo-home"></div>
+   		<div class="logo-big"><img src="images/logo_small.png" alt="" /></div>
+    </div>
+    <nav class="row-menu-full">    	
+        <a href="#" id="pull"></a>
+        <ul class="menu-link">
+            <li><a href="http://congdianguc.tk/new/index.html">Giới Thiệu</a></li>
+            <li><a href="http://congdianguc.tk/new/solutions.html">Giải Pháp</a></li>
+            <li><a href="http://congdianguc.tk/new/customer.html">Khách Hàng</a></li>
+            <li><a href="http://congdianguc.tk/new/partner.html">Đối Tác</a></li>
+            <li><a href="http://congdianguc.tk/new/news.html">Tin Tức</a></li>
+            <li><a href="http://congdianguc.tk/new/jobs.html">Tuyển Dụng</a></li>
+            <li><a href="http://congdianguc.tk/new/contact-us.html">Liên Hệ</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="section section-mobi">
+	<div class="news-box">
+    	<div class="news-list" id="tabs">
+        	<a href="#" class="nav-toggle">News List</a>
+            <nav class="cmn-tile-nav">
+                <ul>
+                    <li><a href="#" class="set number" title="tab1">Giải pháp DMSpro: giám sát từ sản xuất đến đội ngũ bán hàng</a></li>
+                    <li><a href="#" class=" number" title="tab2">DMSpro đạt Huy Chương Vàng DOANH NGHIỆP KHỞI NGHIỆP</a></li>
+                    <li><a href="#" class=" number" title="tab3">DMSpro đạt liên tiếp ba danh hiệu Sao Khuê 2015</a></li>
+                    <li><a href="#" class=" number" title="tab4">DMSpro khởi động dự án GPS tracking cho P&G Việt Nam</a></li>
+                    <li><a href="#" class=" number" title="tab5">Đơn vị sản xuất nước giải khát hàng đầu Việt Nam triển khai DMS</a></li>
+                </ul>
+            </nav>
+        </div>
+    	<div class="news-content">
+        	<div class="news-content-box">
+            	<div id="tab1"><iframe src="./giai-phap/news1.html"></iframe></div>						
+                <div id="tab2"><iframe src="./giai-phap/news2.html"></iframe></div>
+                <div id="tab3"><iframe src="./giai-phap/news3.html"></iframe></div>
+                <div id="tab4"><iframe src="./giai-phap/news4.html"></iframe></div>
+                <div id="tab5"><iframe src="./giai-phap/news5.html"></iframe></div>
+            </div>
+        </div>        
+    </div>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+</section>
+<footer id="footer">
+	<div class="sdt"><span class="call"></span><h3>(+84) 8 3547 0606</h3></div>
+    <div class="footer-box">
+    	<div class="language"><a href="#">English</a></div>
+        <div class="copy-right"><p>2014 Copyright © DMS PRO VIETNAM. All rights reserved. Developed by <a href="#">TamY</a></p></div>
+		<div class="icon-footer">
+        	<a class="youtube" href="#"></a>
+            <a class="google" href="#"></a>
+            <a class="face" href="#"></a>
+            <a class="inlive" href="#"></a>
+            <a class="skype" href="#"></a>
+            <a class="yahoo" href="#"></a>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+<script>
+	$(function() { 
+		    $(function() {  
+        		 var pull = $('#pull');  
+           		 menu = $('.row-menu-full .menu-link');  
+            	 menuHeight  = menu.height();  
+      
+        		$(pull).on('click', function(e) {  
+           			 e.preventDefault();  
+           		 menu.slideToggle();  
+        		});  
+    		});  
+    		$(window).resize(function(){  
+        		var w = $(window).width();  
+        		if(w > 767 && menu.is(':hidden')) {  
+           		 menu.removeAttr('style');  
+        	}  
+   		 });    
+    });  
+</script>
+
+</html>

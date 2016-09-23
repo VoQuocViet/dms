@@ -1,0 +1,230 @@
+.demo-attention {
+	background-color: #D35400;
+	color: #fff;
+	padding: 10px;
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 25px;
+	border-radius: 3px;
+}
+.demo-iframe {
+	background-color: #fff;
+}
+.demo-wrapper {
+	width: 600px;
+	margin: 0 auto;
+	position: absolute;
+	top:150px;
+	right: 50px;
+}
+.demo-wrapper iframe {
+	border:none;
+	width: 100%;
+	background-color: #fff;
+	height: 450px;
+}
+.demo-wrapper iframe::-webkit-scrollbar {
+    width: 12px;
+}
+.demo-wrapper iframe::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+.demo-wrapper iframe::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.demo-wrapper iframe::-webkit-scrollbar-thumb:hover {
+	background-color: #aaa;
+}
+.demo-iframe p{
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 5%;
+}
+p.frame-name
+{
+	font-family: 'open_sans_bold';
+    font-weight:bold;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    width: auto;
+    padding: 5px 25px;
+    background-color: #858585;
+    border: 2px solid rgba(255,255,255,1);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    position: relative;
+    margin: 1px;
+}
+.demo-iframe p iframe{width:100%;height:350px;}
+.demo-iframe ul{list-style-type:circle;}
+.demo-iframe ul li
+{
+	color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+    list-style-image: url(../images/check-icon.png);
+}
+p.frame-hinh{
+    width: 220px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 25px 25px 0 26px;
+    background-color: #fff;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
+}
+p.frame-hinh img{    
+	width: 220px !important;
+    height: auto;
+    display: block;
+}
+p img{
+	width:100%;
+	height:100%;
+	margin-top:10px;
+}
+.news-iframe h3.td-name{border-bottom:1px dotted #000;font-size:20px;}
+.news-iframe p{color:#666;font-size:15px;}
+.news-iframe p strong{color:#000;}
+.contact-form {
+    width: 90%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0 5%;
+    padding-top: 20px;
+}
+.require-col {
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.input-text {
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 10%;
+    position: relative;
+    float: left;
+    margin: 2px 2px 2px 0;
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+.input-text input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 2% 3%;
+    border: none;
+    background: none;
+    width: 94%;
+    height: 26px;
+    font-weight: normal;
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    opacity: 0.5;
+}
+.input-area {
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 30%;
+    position: relative;
+    float: left;
+    margin-top: 2px;
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+.input-area textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    background: none;
+    width: 94%;
+    height: 24%;
+    padding: 2% 3%;
+    resize: vertical;
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    opacity: 0.5;
+}
+.input-but {
+    position: relative;
+    float: right;
+    margin: 10px 0 0 5px;
+    width: 80px;
+}
+.input-but input[type="button"] {
+    color: #fff;
+    font-family: 'futurabold';
+    font-weight: normal;
+    font-size: 18px;
+
+    line-height: 18px;
+    padding: 10px 20px;
+    position: relative;
+    float: right;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-right: 0px;
+    -webkit-appearance: none;
+    background-color: #F90;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.input-but input[type="reset"] {
+    color: #fff;
+    font-family: 'futurabold';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 20px;
+    position: relative;
+    float: right;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-right: 15px;
+    -webkit-appearance: none;
+    background-color: #F90;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
